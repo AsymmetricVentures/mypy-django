@@ -4,6 +4,7 @@
 
 from typing import Any, Optional
 from django.utils.translation import ugettext_lazy as _
+from . import Field
 from .related_descriptors import ForwardManyToOneDescriptor as ForwardManyToOneDescriptor, ManyToManyDescriptor as ManyToManyDescriptor, ReverseManyToOneDescriptor as ReverseManyToOneDescriptor, ReverseOneToOneDescriptor as ReverseOneToOneDescriptor
 from .related_lookups import RelatedExact as RelatedExact, RelatedGreaterThan as RelatedGreaterThan, RelatedGreaterThanOrEqual as RelatedGreaterThanOrEqual, RelatedIn as RelatedIn, RelatedIsNull as RelatedIsNull, RelatedLessThan as RelatedLessThan, RelatedLessThanOrEqual as RelatedLessThanOrEqual
 from .reverse_related import ForeignObjectRel as ForeignObjectRel, ManyToManyRel as ManyToManyRel, ManyToOneRel as ManyToOneRel, OneToOneRel as OneToOneRel
